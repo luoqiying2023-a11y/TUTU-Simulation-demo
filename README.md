@@ -1,5 +1,7 @@
 # TUTU 涂涂 · Simulation Demo v06
 
+**[在线体验 Demo](https://luoqiying2023-a11y.github.io/TUTU-Simulation-demo/)** · [源码仓库](https://github.com/luoqiying2023-a11y/TUTU-Simulation-demo)
+
 用于小红书测试题提交的移动端优先交互 Demo，基于 demo v06 整理。纯 HTML、CSS 与 JavaScript，无第三方运行依赖，无 API Key，无应用后端。
 
 ## 三份档案
@@ -33,11 +35,11 @@ python3 -m http.server 4174 --bind 127.0.0.1
 
 把本目录内容上传到 `TUTU-Simulation-demo` 仓库根目录，确保 `index.html`、`app.js`、`assets/` 同级。
 
-在仓库 Settings → Pages 中选择 Deploy from a branch，选上传代码的分支及 `/(root)`，保存。根目录 `.nojekyll` 应一并保留。成功后在线入口预计为：
+在仓库 Settings → Pages 中选择 Deploy from a branch，选上传代码的分支及 `/(root)`，保存。根目录 `.nojekyll` 应一并保留。在线入口：
 
 https://luoqiying2023-a11y.github.io/TUTU-Simulation-demo/
 
-以上是预期地址，当前尚未推送或部署。页面使用相对资源路径与 Hash 路由，适用于仓库子路径，无需配置路由重写。
+已配置由 `main` 分支根目录发布。页面使用相对资源路径与 Hash 路由，适用于仓库子路径，无需配置路由重写。
 
 ## 数据与验证
 

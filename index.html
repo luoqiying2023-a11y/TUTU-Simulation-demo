@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#EDEDED"><link rel="icon" href="data:,"><title>涂涂 TUTU · 今天想化什么？</title><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./v05.css"></head>
+<body><div class="desktop-note"><a href="#/home" class="wordmark">TUTU<span>涂涂</span></a><p>用好你的每一抹颜色。</p><div class="edition">YOUR EVERYDAY<br>LIP & CHEEK COMPANION<br><br>TUTU / V0.6</div></div><div class="app-shell"><div class="statusbar" aria-hidden="true"><b>9:41</b><span>▮▮▮ &nbsp;◒ &nbsp; ▰</span></div><header id="header"></header><main id="main"></main><nav id="nav" aria-label="主导航"></nav></div><div id="overlay"></div><div id="toast" role="status" aria-live="polite"></div>
+<script>
+// Local-network HTTP previews do not expose randomUUID in every mobile browser.
+if(!crypto.randomUUID)crypto.randomUUID=()=>{
+  const bytes=crypto.getRandomValues(new Uint8Array(16));
+  bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;
+  const hex=Array.from(bytes,b=>b.toString(16).padStart(2,'0')).join('');
+  return `${hex.slice(0,8)}-${hex.slice(8,12)}-${hex.slice(12,16)}-${hex.slice(16,20)}-${hex.slice(20)}`;
+};
+if(location.protocol==='file:') {
+  document.querySelector('#main').innerHTML='<div class="white-card"><h1>涂涂已准备好</h1><p>本演示使用浏览器模块，请通过静态预览或在线体验链接打开。</p><a class="primary" style="margin-top:24px" href="http://localhost:4174/#/home">打开新版 Demo →</a><p>如果链接打不开，在本目录运行 npm start，再点击上方按钮。</p></div>';
+} else {
+  const script=document.createElement('script');script.type='module';script.src='./app.js';document.body.append(script);
+}
+</script></body></html>
